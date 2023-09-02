@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")({ sigint: true })
 console.clear()
 
 function rand(min, max) {
-  return Math.random() * (max - min) + min
+  return Math.floor(Math.random() * (max - min) + min)
 }
 
 const input  = parseInt(prompt("Password length (leave blank for default): "))
