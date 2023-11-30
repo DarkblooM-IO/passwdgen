@@ -1,4 +1,4 @@
-math.randomseed(os.time())
+math.randomseed(math.floor(os.clock()*1000000))
 
 function get_length()
   io.write("Password length (leave blank for default): ")
